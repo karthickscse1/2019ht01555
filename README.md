@@ -15,3 +15,12 @@ The script file named as question1.tcl [it includes procedure to generate conges
 XGraph for congestion-window-size vs. time of TCP Reno and TCP Cubic (you have to upload one graph file for each TCP variant out of multiple simulation time intervals runs performed.)
 observation.txt file
 Create a zip file of all deliverables, i.e., question1.tcl, congestionReno.xg, congestionCubic.xg, and observation.txt to upload on TAXILA.
+
+
+MY ANSWER
+==========================================================================================
+1. I have coded the procdure in the question1.tcl and named a procedure Plot Window to generatea Congestion.xg using Xgraph utility to plot the TCP Congestion window size with respect to time for TCP Remo and TCP cubic Varients. The graph is plotting with the size of congestion window at every 0.1 seconds.
+
+2. I added scripts to obtain dropped packets count for the TCP Flow and commented it. 
+
+3. I ran the scripts and got outputs. 
