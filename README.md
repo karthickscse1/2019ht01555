@@ -23,4 +23,4 @@ MY ANSWER
 
 2. I added scripts to obtain dropped packets count for the TCP Flow and commented it. 
 
-3. I ran the scripts and got outputs. 
+3. I ran the scripts and got outputs. Unfortunately I can't pull any outputs files from my office PCs, and I dont have Linux box in my home. But this script will run for sure. 
