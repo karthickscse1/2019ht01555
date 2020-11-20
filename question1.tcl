@@ -42,7 +42,7 @@ proc monitor {interval}
 proc plotWindow {} {
 	global ns nf f namfile
 	$ns flush-trace
-  #closing the NAM Trace file
+  	#closing the NAM Trace file
 	close $nf
 	close $f
 
@@ -51,13 +51,13 @@ proc plotWindow {} {
 
 
 	exec cp result congestionReno.xg
-#	exec cp result congestionCubic.xg
+	#exec cp result congestionCubic.xg
 
 	exec xgraph -bg green -fg blue congestionReno.xg -t "TCP cwnd" -x "time (milli seconds)" -y "cwnd size (bytes)" -geometry 800x400 &
-#	exec xgraph -bg green -fg blue congestionCubic.xg -t "TCP cwnd" -x "time (milli seconds)" -y "cwnd size (bytes)" -geometry 800x400 &
+	#exec xgraph -bg green -fg blue congestionCubic.xg -t "TCP cwnd" -x "time (milli seconds)" -y "cwnd size (bytes)" -geometry 800x400 &
 
-#Write a script/commands to obtain dropped packets count for the TCP flow. Add this script/commands at the end of the question1.tcl file and comment it.
-# Code to count the number of dropped packets in tcp flow (Commented now)
+	#Write a script/commands to obtain dropped packets count for the TCP flow. Add this script/commands at the end of the question1.tcl file and comment it.
+	# Code to count the number of dropped packets in tcp flow (Commented now)
 
 	#puts "Number of dropped packets for the tcp flow"
 	#exec gawk -f get_drop_packets.awk out.tr &
