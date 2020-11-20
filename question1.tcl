@@ -1,12 +1,11 @@
-
-# nam trace file and ns tracefiles are defined here
+# As Asked in the question Enabling Nam and trace in the script and are defined first
 set namfile     out.nam
 set tracefile   out.tr
 
 #Creating a ns simulator object
 set ns [new Simulator]
 
-#Defining different colors for data flows (for NAM)
+#Defining different colors for data flows (for NAM) to designate the three different traffic flows for animation.
 $ns color 1 Blue
 $ns color 2 Red
 $ns color 3 Green
