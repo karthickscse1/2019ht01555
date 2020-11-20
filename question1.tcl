@@ -49,15 +49,14 @@ proc plotWindow {} {
 	puts "Eecuting NAM on the trace File: out.nam..."
 	#exec nam $namfile
 
-#Write a procedure in the question1.tcl named as plotWindow to generate a graph (congestion.xg) using Xgraph utility 
-#to plot the TCP congestion window size with-respect-to time for TCP Reno and TCP cubic variants. 
-#Plot the size of congestion window at every 0.1 second interval of time.
+
 	exec cp result congestionReno.xg
 #	exec cp result congestionCubic.xg
 
 	exec xgraph -bg green -fg blue congestionReno.xg -t "TCP cwnd" -x "time (milli seconds)" -y "cwnd size (bytes)" -geometry 800x400 &
 #	exec xgraph -bg green -fg blue congestionCubic.xg -t "TCP cwnd" -x "time (milli seconds)" -y "cwnd size (bytes)" -geometry 800x400 &
 
+#Write a script/commands to obtain dropped packets count for the TCP flow. Add this script/commands at the end of the question1.tcl file and comment it.
 # Code to count the number of dropped packets in tcp flow (Commented now)
 
 	#puts "Number of dropped packets for the tcp flow"
